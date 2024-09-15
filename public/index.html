@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chennai Games Studio Pvt</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- For using this link to fetch the social media icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Navbar Head of the Section-->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo"></a>
+      <h4 style="color: aliceblue; font-size: x-large; padding-inline-start: 100px;text-shadow: 2px 2px 4px #000000;">CHENNAI GAMES STUDIO PRIVATE LIMTED</h4>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section Main page -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to CG-Studio</h1>
+      <a href="#about"> Get Started</a>
+
+    </div>
+  </section>
+
+  <!-- Card Grid Section using hover effect & box-shadow-->
+  <section id="about" class="cards">
+    <h2>Our Products</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>MR RACING GAME</h3>
+        <img src="images/card1.avif">
+      </div>
+      <div class="card">
+        <h3>POR</h3>
+        <img src="images/por.avif">
+      </div>
+      <div class="card">
+        <h3>MATH KING </h3>
+        <img src="images/mathking.avif">
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Form Validation in Js-->
+  <section id="contact" class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletter-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <!-- Footer Section Socialmedia-->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
