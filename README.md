@@ -1,4 +1,5 @@
 # Chennai Games Studio Pvt
+file:///home/anand/Pictures/Screenshots/Screenshot%20from%202024-09-15%2015-12-00.png
 
 ## Description
 
