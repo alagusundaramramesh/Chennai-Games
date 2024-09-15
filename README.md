@@ -1,7 +1,6 @@
 # Chennai Games Studio Pvt
-file:///home/anand/Pictures/Screenshots/Screenshot%20from%202024-09-15%2015-12-00.png
-
-## Description
+![Alt text](public/images/readme.png)
+# Description
 
 Chennai Games Studio Pvt is a web application showcasing the products of a fictional game development studio. It includes a homepage with a hero section, a product card grid, and a newsletter subscription form. The project uses HTML, CSS, and JavaScript for the front end, and Node.js with Express for the back end.
 
