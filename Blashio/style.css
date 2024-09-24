@@ -1,0 +1,597 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+/* First nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.social-links a:hover {
+  color: #ddd;
+}
+
+.contact-info {
+  font-size: medium;
+}
+
+.contact-info span {
+  margin-left: 20px;
+}
+
+.border {
+  color: #000;
+  padding: 5px;
+  background-color: greenyellow;
+  border-radius: 2px;
+}
+
+
+/* Second nav bar */
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: greenyellow;
+  padding: 10px 20px;
+}
+
+.company a {
+  color: rgb(124, 119, 119);
+  text-decoration: none;
+  padding: 18px;
+}
+
+.company a:hover {
+  color: black;
+}
+
+.logo img { 
+  width: 80px;  
+  height: 80px; 
+  display: none; /* Makes the link behave like a block */
+  border-radius: 5px;
+  
+  
+}
+
+
+/* Hero Section */
+.herosection {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.ratio-btn input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 2400px; /* Width based on 3 slides */
+  transition: margin-left 1s;
+}
+
+.slide {
+  flex: 0 0 800px; /* Width of each slide */
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.radiolabels {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.navigation_btn {
+  border: 2px solid #080808;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation_btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation_btn:hover {
+  background-color: #d44207;
+}
+
+
+/* Radio button navigation */
+#radio1:checked ~ .slides {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .slides {
+  margin-left: -800px;
+}
+
+#radio3:checked ~ .slides {
+  margin-left: -1600px;
+}
+
+
+/* Advantage section */
+.ouradvantage{
+  height: 400px;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-around;
+}
+.text{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+ /* Cards Section */
+ .cards {
+  padding: 30px;
+  text-align:center;
+ 
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  width: 200px; /* Circle diameter */
+  height: 200px; /* Circle diameter */
+  border-radius: 50%; /* Makes the div circular */
+  overflow: hidden; /* Hides overflow from the image */
+  border: 5px solid #333; /* Optional: border around the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(255, 47, 203);
+}
+.card a{
+  color: #000;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* About-us section*/
+.Aboutus {
+  height: 500px;
+  background-color: greenyellow(219, 223, 213);
+  display: flex;
+  justify-content: space-around;
+}
+.text-1{
+  font-size: 25px;
+  text-align: center;
+}
+
+.info p{
+  text-align: left;
+  height: 100px;
+  width: 400px;
+  justify-content: left;
+  padding-right: 900px;
+
+}
+.info h2{
+
+  background-color: orange;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: left;
+
+  padding: 10px 20px;
+  font-size: small;
+  display: inline-flex;/* extra padding remove option*/
+  
+}
+.info img{
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  right: 2%;                   /* Align to the right */
+  top: 194%;                   /* Align vertically in the center */
+  transform: translateY(-50%); /* image ah vanthu perfect ah align panna layout la*/
+  border-radius: 10px;
+}
+
+/*Circle percentage */
+
+.ouradvantage-1 {
+  padding: 20px;
+  text-align: center;
+  background-color: greenyellow;
+}
+
+.text-2 h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.card-container-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-container-1 .card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4caf50 0% calc(var(--percentage) * 1%), 
+    #ddd calc(var(--percentage) * 1%) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.percentage {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle[data-percentage="75%"] {
+  --percentage: 75;
+}
+
+.circle[data-percentage="50%"] {
+  --percentage: 50;
+}
+
+.circle[data-percentage="90%"] {
+  --percentage: 90;
+}
+
+.circle[data-percentage="65%"] {
+  --percentage: 65;
+}
+
+.circle[data-percentage="100%"] {
+  --percentage: 100;
+}
+
+/* Portfolio section*/
+.portfolio {
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+}
+.portinfo p{
+  text-align: center;
+  justify-content: center;
+}
+
+.portinfo h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-container-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px 0;
+}
+
+.card-container-2 .card {
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%; /* Image takes full width of the box */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+ /* Newsletter Form */
+ .newsletter {
+  padding: 50px;
+  background-color: #ccccccaf;
+  text-align: center;
+}
+.newsletter h2{
+  text-align: center;
+  font-size: x-large;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer section */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  
+}
+
+.footersection {
+  display: flex;
+  justify-content: space-between; /* Align lists to the right */
+  gap: 20px; /* Space between the lists */
+}
+.footer h3{
+  font-size: larger;
+  color: #000;
+  background-color:goldenrod;
+  padding: 10px 20px;
+  display: inline-flex;
+  border-radius: 5px;
+}
+.footersection img{
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+  shape-outside: margin-box;
+}
+.footersection ul {
+  
+  list-style: none;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align text of each list */
+}
+.footersection li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+.footersection .vl {
+  
+    border-left: 3px solid rgb(248, 253, 248);
+    
+    height: 160px;
+
+}
+
+.footer .social-links {
+  margin-top: 20px;
+}
+
+.footer .social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(219, 215, 215, 0.76);
+}
+
+
+
+
+ /* Media Queries */
+@media (max-width: 768px) {
+  
+
+  nav {
+    flex-direction: column; 
+    padding: 15px; 
+  }
+
+  .social-links {
+    margin-bottom: 10px; /* Add space below social links */
+  }
+
+  .title {
+    flex-direction: column; /* Stack title elements */
+    align-items: center; /* Center align items */
+  }
+
+  .company a {
+    padding: 10px; 
+  }
+
+  .herosection {
+    height: 300px; 
+  }
+
+  .slides {
+    width: 100%; /* Adjust slide width to 100% */
+  }
+
+  .slide img {
+    height: 300px; 
+  }
+
+  .card-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 20px; /* Space between cards */
+    padding: 20px 0; 
+  }
+
+  .card-container-2 .card {
+    width: auto; /* Allow cards to adjust width automatically */
+    margin: 0; 
+  }
+
+  .herosection {
+    height: 300px; 
+  }
+
+  .herosection h1 {
+    font-size: 1.8rem; /* Reduce font size for mobile */
+  }
+
+  .herosection p {
+    font-size: 1rem; 
+    padding: 0 20px; 
+  }
+  .ouradvantage {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .text {
+    font-size: 20px; 
+  }
+  .ouradvantage {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; /* padding for spacing */
+  }
+
+  .ouradvantage .text {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; 
+    gap: 15px; 
+  }
+
+  .card {
+    width: 80px; 
+    height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card a {
+    font-size: 24px; 
+  }
+
+
+  .Aboutus {
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .text-1 {
+    font-size: 20px; 
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .info p {
+    text-align: center;
+    height: auto; 
+    width: 90%; 
+    padding-right: 0;
+  }
+
+  .info h2 {
+    background-color: orange; 
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px; 
+    margin: 10px 0; 
+  }
+
+  .info img {
+    width: 100%;
+    height: auto; 
+    margin-top: 15px; 
+    position: relative; 
+    right: 0; 
+    top: auto; 
+  }
+
+  .newsletter input {
+    width: 80%; 
+  }
+
+  .footersection {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .footersection ul {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+ 
+}
+
+  
+
+
+
+
+
+
